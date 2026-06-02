@@ -1,86 +1,764 @@
 <!DOCTYPE html>
+
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ujian PAI Kelas 8</title>
 
-        body{
-            background:linear-gradient(135deg,#1e3c72,#2a5298);
-            color:white;
-            text-align:center;
-        }
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#f4f4f4;
+margin:0;
+padding:15px;
+}
 
-        nav{
-            padding:20px;
-            background:rgba(0,0,0,0.2);
-        }
+.container{
+max-width:900px;
+margin:auto;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
 
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:0 15px;
-            font-weight:bold;
-        }
+h1{
+text-align:center;
+}
 
-        .hero{
-            height:80vh;
-            display:flex;
-            flex-direction:column;
-            justify-content:center;
-            align-items:center;
-        }
+input[type=text],
+textarea{
+width:100%;
+padding:10px;
+margin-top:5px;
+margin-bottom:15px;
+box-sizing:border-box;
+}
 
-        .hero h1{
-            font-size:4rem;
-            margin-bottom:10px;
-        }
+.soal{
+margin-bottom:25px;
+padding:10px;
+border-bottom:1px solid #ddd;
+}
 
-        .hero p{
-            font-size:1.2rem;
-            margin-bottom:20px;
-        }
+button{
+width:100%;
+padding:15px;
+font-size:18px;
+background:#198754;
+color:white;
+border:none;
+border-radius:8px;
+}
 
-        .btn{
-            background:white;
-            color:#2a5298;
-            padding:12px 25px;
-            border-radius:30px;
-            text-decoration:none;
-            font-weight:bold;
-        }
+#hasil{
+margin-top:20px;
+padding:15px;
+background:#eef;
+border-radius:8px;
+display:none;
+}
 
-        footer{
-            padding:20px;
-            background:rgba(0,0,0,0.2);
-        }
-    </style>
+.benar{
+color:green;
+font-weight:bold;
+}
+
+.salah{
+color:red;
+font-weight:bold;
+}
+</style>
+
 </head>
 <body>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Gallery</a>
-        <a href="#">Contact</a>
-    </nav>
+<div class="container">
 
-    <section class="hero">
-        <h1>Selamat Datang</h1>
-        <p>Website GitHub Pages Pertamaku</p>
-        <a href="#" class="btn">Mulai Sekarang</a>
-    </section>
+<h1>UJIAN PAI KELAS 8</h1>
 
-    <footer>
-        <p>© 2026 Website Saya</p>
-    </footer>
+<label>Nama Siswa</label> <input type="text" id="nama">
+
+<label>Kelas</label> <input type="text" id="kelas">
+
+<div id="soalArea">
+
+<!-- SOAL PG NANTI MASUK DI SINI -->
+
+<div class="soal">
+  
+<div class="soal">
+<p><b>1.</b> Hadis ke-28 diriwayatkan oleh ....</p>
+<label><input type="radio" name="q1" value="A"> Al-Irbadh bin Sariyah</label><br>
+<label><input type="radio" name="q1" value="B"> Muadz bin Jabal</label><br>
+<label><input type="radio" name="q1" value="C"> Abu Hurairah</label><br>
+<label><input type="radio" name="q1" value="D"> Umar bin Khattab</label>
+</div>
+
+<div class="soal">
+<p><b>2.</b> Rasulullah berwasiat agar umat Islam selalu ....</p>
+<label><input type="radio" name="q2" value="A"> Kaya</label><br>
+<label><input type="radio" name="q2" value="B"> Terkenal</label><br>
+<label><input type="radio" name="q2" value="C"> Bertakwa kepada Allah</label><br>
+<label><input type="radio" name="q2" value="D"> Berkuasa</label>
+</div>
+
+<div class="soal">
+<p><b>3.</b> Arti kata وَجِلَتْ adalah ....</p>
+<label><input type="radio" name="q3" value="A"> Takut</label><br>
+<label><input type="radio" name="q3" value="B"> Sedih</label><br>
+<label><input type="radio" name="q3" value="C"> Senang</label><br>
+<label><input type="radio" name="q3" value="D"> Marah</label>
+</div>
+
+<div class="soal">
+<p><b>4.</b> Arti kata وَذَرَتْ adalah ....</p>
+<label><input type="radio" name="q4" value="A"> Duduk</label><br>
+<label><input type="radio" name="q4" value="B"> Mengalir</label><br>
+<label><input type="radio" name="q4" value="C"> Berjalan</label><br>
+<label><input type="radio" name="q4" value="D"> Menangis</label>
+</div>
+
+<div class="soal">
+<p><b>5.</b> Arti النَّوَاجِذ adalah ....</p>
+<label><input type="radio" name="q5" value="A"> Gigi seri</label><br>
+<label><input type="radio" name="q5" value="B"> Gigi taring</label><br>
+<label><input type="radio" name="q5" value="C"> Gigi geraham</label><br>
+<label><input type="radio" name="q5" value="D"> Gusi</label>
+</div>
+
+<div class="soal">
+<p><b>6.</b> Rasulullah memerintahkan berpegang teguh kepada ....</p>
+<label><input type="radio" name="q6" value="A"> Adat istiadat</label><br>
+<label><input type="radio" name="q6" value="B"> Sunnah Rasulullah dan Khulafaur Rasyidin</label><br>
+<label><input type="radio" name="q6" value="C"> Pendapat mayoritas</label><br>
+<label><input type="radio" name="q6" value="D"> Kebiasaan masyarakat</label>
+</div>
+
+<div class="soal">
+<p><b>7.</b> Setiap bid'ah adalah ....</p>
+<label><input type="radio" name="q7" value="A"> Sunnah</label><br>
+<label><input type="radio" name="q7" value="B"> Mubah</label><br>
+<label><input type="radio" name="q7" value="C"> Sesat</label><br>
+<label><input type="radio" name="q7" value="D"> Makruh</label>
+</div>
+
+<div class="soal">
+<p><b>8.</b> Setelah Rasulullah wafat akan muncul banyak ....</p>
+<label><input type="radio" name="q8" value="A"> Kekayaan</label><br>
+<label><input type="radio" name="q8" value="B"> Perselisihan</label><br>
+<label><input type="radio" name="q8" value="C"> Kemenangan</label><br>
+<label><input type="radio" name="q8" value="D"> Perdagangan</label>
+</div>
+
+<div class="soal">
+<p><b>9.</b> Hadis ke-29 diriwayatkan oleh ....</p>
+<label><input type="radio" name="q9" value="A"> Muadz bin Jabal</label><br>
+<label><input type="radio" name="q9" value="B"> Abu Hurairah</label><br>
+<label><input type="radio" name="q9" value="C"> Utsman bin Affan</label><br>
+<label><input type="radio" name="q9" value="D"> Ali bin Abi Thalib</label>
+</div>
+
+<div class="soal">
+<p><b>10.</b> Amal yang menjadi perisai adalah ....</p>
+<label><input type="radio" name="q10" value="A"> Haji</label><br>
+<label><input type="radio" name="q10" value="B"> Umrah</label><br>
+<label><input type="radio" name="q10" value="C"> Puasa</label><br>
+<label><input type="radio" name="q10" value="D"> Zakat</label>
+</div>
+
+<div class="soal">
+<p><b>11.</b> Sedekah dapat memadamkan ....</p>
+<label><input type="radio" name="q11" value="A"> Api dunia</label><br>
+<label><input type="radio" name="q11" value="B"> Dosa</label><br>
+<label><input type="radio" name="q11" value="C"> Kemiskinan</label><br>
+<label><input type="radio" name="q11" value="D"> Penyakit</label>
+</div>
+
+<div class="soal">
+<p><b>12.</b> Salah satu pintu kebaikan adalah ....</p>
+<label><input type="radio" name="q12" value="A"> Puasa</label><br>
+<label><input type="radio" name="q12" value="B"> Mencela</label><br>
+<label><input type="radio" name="q12" value="C"> Bohong</label><br>
+<label><input type="radio" name="q12" value="D"> Ghibah</label>
+</div>
+
+<div class="soal">
+<p><b>13.</b> Salat malam dilakukan pada ....</p>
+<label><input type="radio" name="q13" value="A"> Pagi hari</label><br>
+<label><input type="radio" name="q13" value="B"> Tengah malam</label><br>
+<label><input type="radio" name="q13" value="C"> Siang hari</label><br>
+<label><input type="radio" name="q13" value="D"> Sore hari</label>
+</div>
+
+<div class="soal">
+<p><b>14.</b> Pokok segala urusan adalah ....</p>
+<label><input type="radio" name="q14" value="A"> Islam</label><br>
+<label><input type="radio" name="q14" value="B"> Salat</label><br>
+<label><input type="radio" name="q14" value="C"> Jihad</label><br>
+<label><input type="radio" name="q14" value="D"> Sedekah</label>
+</div>
+
+<div class="soal">
+<p><b>15.</b> Tiang agama adalah ....</p>
+<label><input type="radio" name="q15" value="A"> Puasa</label><br>
+<label><input type="radio" name="q15" value="B"> Zakat</label><br>
+<label><input type="radio" name="q15" value="C"> Salat</label><br>
+<label><input type="radio" name="q15" value="D"> Haji</label>
+</div>
+
+<div class="soal">
+<p><b>16.</b> Puncak perkara dalam Islam adalah ....</p>
+<label><input type="radio" name="q16" value="A"> Sedekah</label><br>
+<label><input type="radio" name="q16" value="B"> Jihad</label><br>
+<label><input type="radio" name="q16" value="C"> Zakat</label><br>
+<label><input type="radio" name="q16" value="D"> Umrah</label>
+</div>
+
+<div class="soal">
+<p><b>17.</b> Rasulullah memegang .... Muadz ketika memberi nasihat.</p>
+<label><input type="radio" name="q17" value="A"> Tangan</label><br>
+<label><input type="radio" name="q17" value="B"> Kepala</label><br>
+<label><input type="radio" name="q17" value="C"> Lidah</label><br>
+<label><input type="radio" name="q17" value="D"> Kaki</label>
+</div>
+
+<div class="soal">
+<p><b>18.</b> Penyebab manusia banyak masuk neraka menurut hadis ini adalah ....</p>
+<label><input type="radio" name="q18" value="A"> Hartanya</label><br>
+<label><input type="radio" name="q18" value="B"> Lisannya</label><br>
+<label><input type="radio" name="q18" value="C"> Rumahnya</label><br>
+<label><input type="radio" name="q18" value="D"> Kendaraannya</label>
+</div>
+
+<div class="soal">
+<p><b>19.</b> Sunnah Khulafaur Rasyidin harus ....</p>
+<label><input type="radio" name="q19" value="A"> Ditinggalkan</label><br>
+<label><input type="radio" name="q19" value="B"> Dipegang teguh</label><br>
+<label><input type="radio" name="q19" value="C"> Dilupakan</label><br>
+<label><input type="radio" name="q19" value="D"> Diganti</label>
+</div>
+
+<div class="soal">
+<p><b>20.</b> Khulafaur Rasyidin berarti khalifah yang ....</p>
+<label><input type="radio" name="q20" value="A"> Kaya</label><br>
+<label><input type="radio" name="q20" value="B"> Terkenal</label><br>
+<label><input type="radio" name="q20" value="C"> Mendapat petunjuk</label><br>
+<label><input type="radio" name="q20" value="D"> Pemberani</label>
+</div>
+
+<div class="soal">
+<p><b>21.</b> Nasihat Rasulullah pada hadis ke-28 membuat para sahabat ....</p>
+<label><input type="radio" name="q21" value="A"> Tertawa</label><br>
+<label><input type="radio" name="q21" value="B"> Menangis dan hati bergetar</label><br>
+<label><input type="radio" name="q21" value="C"> Mengantuk</label><br>
+<label><input type="radio" name="q21" value="D"> Diam saja</label>
+</div>
+
+<div class="soal">
+<p><b>22.</b> Sahabat yang meminta nasihat kepada Rasulullah dalam hadis ke-29 adalah ....</p>
+<label><input type="radio" name="q22" value="A"> Muadz bin Jabal</label><br>
+<label><input type="radio" name="q22" value="B"> Abu Bakar</label><br>
+<label><input type="radio" name="q22" value="C"> Umar bin Khattab</label><br>
+<label><input type="radio" name="q22" value="D"> Abu Hurairah</label>
+</div>
+
+<div class="soal">
+<p><b>23.</b> Orang yang menjaga lisannya akan terhindar dari ....</p>
+<label><input type="radio" name="q23" value="A"> Pahala</label><br>
+<label><input type="radio" name="q23" value="B"> Kebaikan</label><br>
+<label><input type="radio" name="q23" value="C"> Dosa</label><br>
+<label><input type="radio" name="q23" value="D"> Ilmu</label>
+</div>
+
+<div class="soal">
+<p><b>24.</b> Salah satu contoh menjaga lisan adalah ....</p>
+<label><input type="radio" name="q24" value="A"> Ghibah</label><br>
+<label><input type="radio" name="q24" value="B"> Fitnah</label><br>
+<label><input type="radio" name="q24" value="C"> Berkata jujur</label><br>
+<label><input type="radio" name="q24" value="D"> Mencaci</label>
+</div>
+
+<div class="soal">
+<p><b>25.</b> Puasa disebut sebagai ....</p>
+<label><input type="radio" name="q25" value="A"> Perisai</label><br>
+<label><input type="radio" name="q25" value="B"> Tiang</label><br>
+<label><input type="radio" name="q25" value="C"> Puncak</label><br>
+<label><input type="radio" name="q25" value="D"> Pokok</label>
+</div>
+
+<div class="soal">
+<p><b>26.</b> Sedekah dapat memadamkan dosa sebagaimana air memadamkan ....</p>
+<label><input type="radio" name="q26" value="A"> Debu</label><br>
+<label><input type="radio" name="q26" value="B"> Api</label><br>
+<label><input type="radio" name="q26" value="C"> Angin</label><br>
+<label><input type="radio" name="q26" value="D"> Panas</label>
+</div>
+
+<div class="soal">
+<p><b>27.</b> Salat malam termasuk ....</p>
+<label><input type="radio" name="q27" value="A"> Maksiat</label><br>
+<label><input type="radio" name="q27" value="B"> Pintu kebaikan</label><br>
+<label><input type="radio" name="q27" value="C"> Bidah</label><br>
+<label><input type="radio" name="q27" value="D"> Larangan</label>
+</div>
+
+<div class="soal">
+<p><b>28.</b> Menolong teman yang kesulitan belajar merupakan contoh ....</p>
+<label><input type="radio" name="q28" value="A"> Sedekah</label><br>
+<label><input type="radio" name="q28" value="B"> Maksiat</label><br>
+<label><input type="radio" name="q28" value="C"> Dosa</label><br>
+<label><input type="radio" name="q28" value="D"> Bidah</label>
+</div>
+
+<div class="soal">
+<p><b>29.</b> Mengucapkan salam ketika masuk rumah merupakan contoh ....</p>
+<label><input type="radio" name="q29" value="A"> Bidah</label><br>
+<label><input type="radio" name="q29" value="B"> Sunnah Rasulullah</label><br>
+<label><input type="radio" name="q29" value="C"> Maksiat</label><br>
+<label><input type="radio" name="q29" value="D"> Dosa</label>
+</div>
+
+<div class="soal">
+<p><b>30.</b> Membantu orang tua di rumah merupakan contoh ....</p>
+<label><input type="radio" name="q30" value="A"> Akhlak terpuji</label><br>
+<label><input type="radio" name="q30" value="B"> Akhlak tercela</label><br>
+<label><input type="radio" name="q30" value="C"> Kemalasan</label><br>
+<label><input type="radio" name="q30" value="D"> Kesombongan</label>
+</div>
+
+<div class="soal">
+<p><b>31.</b> Bermusyawarah dalam keluarga merupakan contoh penerapan ....</p>
+<label><input type="radio" name="q31" value="A"> Sunnah yang baik</label><br>
+<label><input type="radio" name="q31" value="B"> Kemaksiatan</label><br>
+<label><input type="radio" name="q31" value="C"> Dosa</label><br>
+<label><input type="radio" name="q31" value="D"> Permusuhan</label>
+</div>
+
+<div class="soal">
+<p><b>32.</b> Menurut hadis ke-29, pokok segala urusan adalah ....</p>
+<label><input type="radio" name="q32" value="A"> Jihad</label><br>
+<label><input type="radio" name="q32" value="B"> Islam</label><br>
+<label><input type="radio" name="q32" value="C"> Sedekah</label><br>
+<label><input type="radio" name="q32" value="D"> Puasa</label>
+</div>
+
+<div class="soal">
+<p><b>33.</b> Menurut hadis ke-29, tiang agama adalah ....</p>
+<label><input type="radio" name="q33" value="A"> Haji</label><br>
+<label><input type="radio" name="q33" value="B"> Puasa</label><br>
+<label><input type="radio" name="q33" value="C"> Salat</label><br>
+<label><input type="radio" name="q33" value="D"> Sedekah</label>
+</div>
+
+<div class="soal">
+<p><b>34.</b> Menurut hadis ke-29, puncak agama adalah ....</p>
+<label><input type="radio" name="q34" value="A"> Salat</label><br>
+<label><input type="radio" name="q34" value="B"> Jihad</label><br>
+<label><input type="radio" name="q34" value="C"> Zakat</label><br>
+<label><input type="radio" name="q34" value="D"> Umrah</label>
+</div>
+
+<div class="soal">
+<p><b>35.</b> Menuntut ilmu dengan sungguh-sungguh termasuk contoh ....</p>
+<label><input type="radio" name="q35" value="A"> Jihad</label><br>
+<label><input type="radio" name="q35" value="B"> Maksiat</label><br>
+<label><input type="radio" name="q35" value="C"> Kemalasan</label><br>
+<label><input type="radio" name="q35" value="D"> Kesombongan</label>
+</div>
+
+<div class="soal">
+<p><b>36.</b> Mengajak teman melakukan salat termasuk contoh ....</p>
+<label><input type="radio" name="q36" value="A"> Jihad di jalan Allah</label><br>
+<label><input type="radio" name="q36" value="B"> Ghibah</label><br>
+<label><input type="radio" name="q36" value="C"> Fitnah</label><br>
+<label><input type="radio" name="q36" value="D"> Permusuhan</label>
+</div>
+
+<div class="soal">
+<p><b>37.</b> Melawan hawa nafsu termasuk bentuk ....</p>
+<label><input type="radio" name="q37" value="A"> Jihad</label><br>
+<label><input type="radio" name="q37" value="B"> Bidah</label><br>
+<label><input type="radio" name="q37" value="C"> Dosa</label><br>
+<label><input type="radio" name="q37" value="D"> Kesombongan</label>
+</div>
+
+<div class="soal">
+<p><b>38.</b> Salah satu contoh sedekah di sekolah adalah ....</p>
+<label><input type="radio" name="q38" value="A"> Mengejek teman</label><br>
+<label><input type="radio" name="q38" value="B"> Membantu teman belajar</label><br>
+<label><input type="radio" name="q38" value="C"> Berbohong</label><br>
+<label><input type="radio" name="q38" value="D"> Bertengkar</label>
+</div>
+
+<div class="soal">
+<p><b>39.</b> Membersihkan lingkungan sekolah termasuk ....</p>
+<label><input type="radio" name="q39" value="A"> Sedekah</label><br>
+<label><input type="radio" name="q39" value="B"> Dosa</label><br>
+<label><input type="radio" name="q39" value="C"> Maksiat</label><br>
+<label><input type="radio" name="q39" value="D"> Bidah</label>
+</div>
+
+<div class="soal">
+<p><b>40.</b> Perintah utama dalam hadis ke-28 ketika terjadi perselisihan adalah ....</p>
+<label><input type="radio" name="q40" value="A"> Mengikuti hawa nafsu</label><br>
+<label><input type="radio" name="q40" value="B"> Berpegang teguh kepada sunnah</label><br>
+<label><input type="radio" name="q40" value="C"> Membuat ajaran baru</label><br>
+<label><input type="radio" name="q40" value="D"> Mengikuti mayoritas tanpa ilmu</label>
+</div>    
+  
+</div>
+
+<!-- ISIAN -->
+
+<div class="soal">
+
+<div class="soal">
+<p><b>1.</b> Arti وَجِلَتْ adalah ....</p>
+<input type="text" id="isian1">
+</div>
+
+<div class="soal">
+<p><b>2.</b> Arti وَذَرَتْ adalah ....</p>
+<input type="text" id="isian2">
+</div>
+
+<div class="soal">
+<p><b>3.</b> Arti النَّوَاجِذ adalah ....</p>
+<input type="text" id="isian3">
+</div>
+
+<div class="soal">
+<p><b>4.</b> Hadis ke-28 diriwayatkan oleh ....</p>
+<input type="text" id="isian4">
+</div>
+
+<div class="soal">
+<p><b>5.</b> Hadis ke-29 diriwayatkan oleh ....</p>
+<input type="text" id="isian5">
+</div>
+
+<div class="soal">
+<p><b>6.</b> Pokok segala urusan adalah ....</p>
+<input type="text" id="isian6">
+</div>
+
+<div class="soal">
+<p><b>7.</b> Tiang agama adalah ....</p>
+<input type="text" id="isian7">
+</div>
+
+<div class="soal">
+<p><b>8.</b> Puncak perkara dalam Islam adalah ....</p>
+<input type="text" id="isian8">
+</div>
+
+<div class="soal">
+<p><b>9.</b> Puasa adalah sebuah ....</p>
+<input type="text" id="isian9">
+</div>
+
+<div class="soal">
+<p><b>10.</b> Setiap bid'ah adalah ....</p>
+<input type="text" id="isian10">
+</div>
+  
+<!-- URAIAN -->
+
+<div class="soal">
+
+<div class="soal">
+<p><b>1.</b> Tuliskan 3 contoh Sunnah Rasulullah dan Khulafaur Rasyidin yang dapat dilakukan di lingkungan keluarga!</p>
+<textarea id="uraian1" rows="5"></textarea>
+</div>
+
+<div class="soal">
+<p><b>2.</b> Tuliskan 3 contoh sedekah yang dapat dilakukan di lingkungan sekolah!</p>
+<textarea id="uraian2" rows="5"></textarea>
+</div>
+
+<div class="soal">
+<p><b>3.</b> Tuliskan 3 pintu-pintu kebaikan dalam Hadis ke-29!</p>
+<textarea id="uraian3" rows="5"></textarea>
+</div>
+
+<div class="soal">
+<p><b>4.</b> Tuliskan apa tiang agama dalam Hadis ke-29 dan jelaskan mengapa salat sangat penting bagi seorang muslim!</p>
+<textarea id="uraian4" rows="5"></textarea>
+</div>
+
+<div class="soal">
+<p><b>5.</b> Puncak dari sebuah amal adalah jihad. Tuliskan 3 contoh jihad di jalan Allah yang dapat dilakukan oleh seorang pelajar!</p>
+<textarea id="uraian5" rows="5"></textarea>
+</div>
+  
+</div>
+
+<button onclick="periksa()">SELESAI UJIAN</button>
+
+<div id="hasil"></div>
+
+
+</div>
+
+<script>
+
+const kunciPG = {
+const kunciPG = {
+q1:"A",
+q2:"C",
+q3:"A",
+q4:"B",
+q5:"C",
+q6:"B",
+q7:"C",
+q8:"B",
+q9:"A",
+q10:"C",
+q11:"B",
+q12:"A",
+q13:"B",
+q14:"A",
+q15:"C",
+q16:"B",
+q17:"C",
+q18:"B",
+q19:"B",
+q20:"C",
+q21:"B",
+q22:"A",
+q23:"C",
+q24:"C",
+q25:"A",
+q26:"B",
+q27:"B",
+q28:"A",
+q29:"B",
+q30:"A",
+q31:"A",
+q32:"B",
+q33:"C",
+q34:"B",
+q35:"A",
+q36:"A",
+q37:"A",
+q38:"B",
+q39:"A",
+q40:"B",
+};
+
+const pembahasanPG = {
+q1:"Hadis ke-28 diriwayatkan oleh Al-Irbadh bin Sariyah r.a.",
+q2:"Rasulullah ﷺ berwasiat agar umat Islam selalu bertakwa kepada Allah.",
+q3:"وَجِلَتْ berarti takut atau hati menjadi gemetar.",
+q4:"وَذَرَتْ berarti mengalir, yaitu air mata yang mengalir.",
+q5:"النَّوَاجِذ berarti gigi geraham.",
+q6:"Ketika terjadi perselisihan, Rasulullah memerintahkan berpegang teguh pada sunnah beliau dan sunnah Khulafaur Rasyidin.",
+q7:"Setiap bid'ah yang diada-adakan dalam agama adalah kesesatan.",
+q8:"Rasulullah mengabarkan bahwa setelah beliau wafat akan terjadi banyak perselisihan.",
+q9:"Hadis ke-29 diriwayatkan oleh Muadz bin Jabal r.a.",
+q10:"Puasa adalah perisai yang melindungi seseorang dari dosa dan neraka.",
+q11:"Sedekah memadamkan dosa sebagaimana air memadamkan api.",
+q12:"Puasa termasuk salah satu pintu kebaikan yang disebutkan Rasulullah ﷺ.",
+q13:"Salat malam atau qiyamul lail dilakukan pada waktu malam terutama tengah malam.",
+q14:"Pokok segala urusan dalam hadis ini adalah Islam.",
+q15:"Tiang agama adalah salat.",
+q16:"Puncak perkara dalam Islam adalah jihad di jalan Allah.",
+q17:"Rasulullah memegang lidahnya ketika menjelaskan pentingnya menjaga ucapan.",
+q18:"Banyak manusia masuk neraka akibat ucapan lisannya.",
+q19:"Sunnah Khulafaur Rasyidin harus dipegang teguh sebagaimana sunnah Rasulullah.",
+q20:"Khulafaur Rasyidin adalah para khalifah yang mendapat petunjuk.",
+q21:"Nasihat Rasulullah membuat para sahabat menangis dan hati mereka bergetar.",
+q22:"Muadz bin Jabal adalah sahabat yang bertanya dalam hadis ke-29.",
+q23:"Menjaga lisan membantu seseorang terhindar dari dosa.",
+q24:"Berkata jujur merupakan contoh menjaga lisan.",
+q25:"Dalam hadis disebutkan bahwa puasa adalah perisai.",
+q26:"Sedekah memadamkan dosa sebagaimana air memadamkan api.",
+q27:"Salat malam termasuk salah satu pintu kebaikan.",
+q28:"Membantu teman belajar merupakan bentuk sedekah nonmateri.",
+q29:"Mengucapkan salam adalah salah satu sunnah Rasulullah ﷺ.",
+q30:"Membantu orang tua merupakan akhlak yang terpuji.",
+q31:"Musyawarah dalam keluarga merupakan penerapan sunnah yang baik.",
+q32:"Pokok segala urusan adalah Islam.",
+q33:"Tiang agama adalah salat.",
+q34:"Puncak agama adalah jihad di jalan Allah.",
+q35:"Belajar sungguh-sungguh termasuk jihad dalam menuntut ilmu.",
+q36:"Mengajak teman berbuat baik termasuk jihad di jalan Allah.",
+q37:"Melawan hawa nafsu merupakan salah satu bentuk jihad.",
+q38:"Membantu teman belajar merupakan contoh sedekah di sekolah.",
+q39:"Menjaga kebersihan lingkungan sekolah termasuk bentuk sedekah.",
+q40:"Saat terjadi perselisihan, umat Islam diperintahkan berpegang pada sunnah Rasulullah dan Khulafaur Rasyidin.",
+};  
+  
+const kunciIsian = {
+isian1:"takut",
+isian2:"mengalir",
+isian3:"gigi geraham",
+isian4:"al irbadh bin sariyah",
+isian5:"muadz bin jabal",
+isian6:"islam",
+isian7:"salat",
+isian8:"jihad",
+isian9:"perisai",
+isian10:"sesat",
+};
+
+function normal(teks){
+return teks
+.toLowerCase()
+.trim()
+.replace(/-/g," ")
+.replace(/\s+/g," ");
+}
+
+function periksa(){
+
+let benarPG = 0;
+let salahList = "";
+
+for(let kode in kunciPG){
+
+let dipilih =
+document.querySelector(
+'input[name="'+kode+'"]:checked'
+);
+
+if(dipilih){
+
+if(dipilih.value===kunciPG[kode]){
+
+benarPG++;
+
+}else{
+
+salahList +=
+"<p class='salah'>"+
+kode+
+" salah.<br>"+
+"Jawaban benar: "+
+pembahasanPG[kode]+
+"</p>";
+
+}
+
+}else{
+
+salahList +=
+"<p class='salah'>"+
+kode+
+" belum dijawab.<br>"+
+"Jawaban benar: "+
+pembahasanPG[kode]+
+"</p>";
+
+}
+
+} // PENUTUP for kunciPG
+
+let benarIsian = 0;
+
+for(let kode in kunciIsian){
+
+let isi =
+normal(
+document.getElementById(kode).value
+);
+
+let kunci =
+normal(kunciIsian[kode]);
+
+if(isi===""){
+
+salahList +=
+"<p class='salah'>"+
+kode+
+" belum dijawab.<br>Jawaban benar: "+
+kunciIsian[kode]+
+"</p>";
+
+}
+else if(isi===kunci){
+
+benarIsian++;
+
+}
+else{
+
+salahList +=
+"<p class='salah'>"+
+kode+
+" salah.<br>Jawaban benar: "+
+kunciIsian[kode]+
+"</p>";
+
+  }
+
+}
+
+const totalPG = Object.keys(kunciPG).length;
+const totalIsian = Object.keys(kunciIsian).length;
+
+let nilaiPG =
+(benarPG / totalPG) * 50;
+
+let nilaiIsian =
+(benarIsian / totalIsian) * 50;
+
+let nilaiAkhir =
+Math.round(nilaiPG + nilaiIsian);
+
+document.getElementById("hasil").style.display="block";
+
+document.getElementById("hasil").innerHTML=
+"<h2>Hasil Ujian</h2>"+
+"<p>Nama : "+document.getElementById("nama").value+"</p>"+
+"<p>Kelas : "+document.getElementById("kelas").value+"</p>"+
+"<p>Nilai PG : "+nilaiPG+"</p>"+
+"<p>Nilai Isian : "+nilaiIsian+"</p>"+
+"<p><b>Benar PG :</b> "+benarPG+" / "+totalPG+"</p>"+
+"<p><b>Benar Isian :</b> "+benarIsian+" / "+totalIsian+"</p>"+
+"<p><b>Nilai Akhir :</b> "+nilaiAkhir+"</p>"+
+nilaiAkhir+
+"</p>"+
+"<hr>"+
+"<h3>Jawaban Salah</h3>"+
+salahList+
+"<hr>"+
+
+"<h3>Uraian (Periksa Manual)</h3>"+
+
+"<p><b>51.</b> "+document.getElementById("uraian1").value+"</p>"+
+
+"<p><b>52.</b> "+document.getElementById("uraian2").value+"</p>"+
+
+"<p><b>53.</b> "+document.getElementById("uraian3").value+"</p>"+
+
+"<p><b>54.</b> "+document.getElementById("uraian4").value+"</p>"+
+
+"<p><b>55.</b> "+document.getElementById("uraian5").value+"</p>"+
+
+  "<p><b>55.</b> "+document.getElementById("uraian6").value+"</p>"+
+
+  "<p><b>55.</b> "+document.getElementById("uraian7").value+"</p>"+
+
+  "<p><b>55.</b> "+document.getElementById("uraian8").value+"</p>"+
+
+"<br><br>"+
+
+"<button onclick='salinHasil()'>📋 SALIN HASIL</button>";
+}
+function salinHasil(){
+
+let teks =
+document.getElementById("hasil").innerText;
+
+navigator.clipboard.writeText(teks);
+
+alert("Hasil berhasil disalin");
+
+}
+</script>
 
 </body>
 </html>
